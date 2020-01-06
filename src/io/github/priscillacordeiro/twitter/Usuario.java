@@ -1,6 +1,6 @@
 package io.github.priscillacordeiro.twitter;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Usuario {
 
@@ -8,10 +8,10 @@ public class Usuario {
 	private String senha;
 	private String nome;
 	private String nomeUsuario;
-	private Date dataNascimento;
+	private LocalDate dataNascimento;
 	private String bio;
 	
-	public Usuario(String email, String senha, String nome, String nomeUsuario, Date dataNascimento, String bio) {
+	public Usuario(String email, String senha, String nome, String nomeUsuario, LocalDate dataNascimento, String bio) {
 		this.email = email;
 		this.senha = senha;
 		this.nome = nome;
@@ -52,11 +52,11 @@ public class Usuario {
 		this.nomeUsuario = nomeUsuario;
 	}
 
-	public Date getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
